@@ -17,7 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<GetConnection>(sp => 
     async () => {
-        string connectionString = sp.GetService<IConfiguration>()["ConnectionString"];
+        string connectionString = sp.GetService<IConfiguration>()["DevenvConnectionString"];
         var connection = new MySqlConnection(connectionString);
         await connection.OpenAsync();
         return connection;
