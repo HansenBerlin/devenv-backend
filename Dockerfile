@@ -7,6 +7,7 @@ WORKDIR /src
 COPY ["MinimalApi/MinimalApi.csproj", "MinimalApi/"]
 RUN dotnet restore "MinimalApi/MinimalApi.csproj"
 COPY . .
+RUN find -type d -name bin -prune -exec rm -rf {} \; && find -type d -name obj -prune -exec rm -rf {} \;
 WORKDIR "/src/MinimalApi"
 RUN dotnet build "MinimalApi.csproj" -c Release -o /app/build
 
