@@ -1,37 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe2022\\nw\\DeploymentArch\\Sc\\MinimalApi\\MinimalApi\\MinimalApi\\MinimalApi.csproj": {}
+    "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe23\\Schmietendorf\\aufgabe3\\docker-demo-devenv\\backend\\devenv-backend\\MinimalApi\\MinimalApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe2022\\nw\\DeploymentArch\\Sc\\MinimalApi\\MinimalApi\\MinimalApi\\MinimalApi.csproj": {
+    "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe23\\Schmietendorf\\aufgabe3\\docker-demo-devenv\\backend\\devenv-backend\\MinimalApi\\MinimalApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe2022\\nw\\DeploymentArch\\Sc\\MinimalApi\\MinimalApi\\MinimalApi\\MinimalApi.csproj",
+        "projectUniqueName": "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe23\\Schmietendorf\\aufgabe3\\docker-demo-devenv\\backend\\devenv-backend\\MinimalApi\\MinimalApi.csproj",
         "projectName": "MinimalApi",
-        "projectPath": "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe2022\\nw\\DeploymentArch\\Sc\\MinimalApi\\MinimalApi\\MinimalApi\\MinimalApi.csproj",
+        "projectPath": "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe23\\Schmietendorf\\aufgabe3\\docker-demo-devenv\\backend\\devenv-backend\\MinimalApi\\MinimalApi.csproj",
         "packagesPath": "C:\\Users\\Hannes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe2022\\nw\\DeploymentArch\\Sc\\MinimalApi\\MinimalApi\\MinimalApi\\obj\\",
+        "outputPath": "C:\\Users\\Hannes\\Documents\\_HWR\\WiSe23\\Schmietendorf\\aufgabe3\\docker-demo-devenv\\backend\\devenv-backend\\MinimalApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Users\\Hannes\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
         ],
         "configFilePaths": [
+          "C:\\Users\\Hannes\\NuGet.Config",
           "C:\\Users\\Hannes\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Hannes\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -42,28 +41,40 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.90, )"
+              "version": "[2.0.123, )"
             },
             "Dapper.Contrib": {
               "target": "Package",
               "version": "[2.0.78, )"
             },
-            "MySql.Data": {
+            "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.30, )"
+              "version": "[7.0.4, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "MySqlConnector": {
               "target": "Package",
-              "version": "[6.1.5, )"
+              "version": "[2.2.5, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.3, )"
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -77,24 +88,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.9, 6.0.9]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.9, 6.0.9]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.9, 6.0.9]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.9, 6.0.9]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -103,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }
